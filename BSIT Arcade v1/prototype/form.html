@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSIT Arcade - Add game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="list.html">BSIT Arcade</a>
+      <div class="nav-links">
+        <a class="nav-link" href="dashboard.html">Home</a>
+        <a class="nav-link" href="list.html">Games</a>
+        <a class="nav-link active" href="form.html">Add game</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-heading">
+      <h1>Add game</h1>
+    </div>
+
+    <form action="#" method="post" class="form-card">
+      <div class="form-grid">
+        <div class="field">
+          <label for="developer_id">Developer *</label>
+          <select class="form-control" id="developer_id" name="developer_id" required>
+            <option value="">Choose a developer</option>
+            <option value="usr001">Marc Celis</option>
+            <option value="usr002">Charles Martillano</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="category_id">Category *</label>
+          <select class="form-control" id="category_id" name="category_id" required>
+            <option value="">Choose a category</option>
+            <option value="cat001">Multiplayer (LAN)</option>
+            <option value="cat002">Action / Arcade</option>
+            <option value="cat003">RPG / Adventure</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="title">Game title *</label>
+          <input class="form-control" id="title" name="title" type="text" maxlength="150" required placeholder="Enter the game title">
+          <p class="error">Please enter a game title.</p>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Save</button>
+          <a class="btn-secondary" href="list.html">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSIT Arcade - Games</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="list.html">BSIT Arcade</a>
+      <div class="nav-links">
+        <a class="nav-link" href="dashboard.html">Home</a>
+        <a class="nav-link active" href="list.html">Games</a>
+        <a class="nav-link" href="form.html">Add game</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-heading">
+      <h1>Campus games</h1>
+      <a class="btn" href="form.html">Add game</a>
+    </div>
+
+    <div class="toolbar">
+      <label for="gameSearch" hidden>Search games</label>
+      <input class="search-input" id="gameSearch" name="search" type="search" placeholder="Search games">
+    </div>
+
+    <div class="table-wrap">
+      <table aria-label="Published games">
+        <thead>
+          <tr>
+            <th>Game title</th>
+            <th>Developer</th>
+            <th>Category</th>
+            <th>Created</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="detail.html">Lab Shooter: Local Wi-Fi Edition</a></td>
+            <td>Marc Celis</td>
+            <td>Multiplayer (LAN)</td>
+            <td>2026-10-10</td>
+            <td><div class="row-actions"><a class="btn-secondary btn-small" href="form.html">Edit</a><button class="delete-button btn-small" type="button">Delete</button></div></td>
+          </tr>
+          <tr>
+            <td>Arcade Central Mania</td>
+            <td>Marc Celis</td>
+            <td>Action / Arcade</td>
+            <td>2026-10-14</td>
+            <td><div class="row-actions"><a class="btn-secondary btn-small" href="form.html">Edit</a><button class="delete-button btn-small" type="button">Delete</button></div></td>
+          </tr>
+          <tr>
+            <td>Campus Clash LAN</td>
+            <td>Charles Martillano</td>
+            <td>Multiplayer (LAN)</td>
+            <td>2026-10-22</td>
+            <td><div class="row-actions"><a class="btn-secondary btn-small" href="form.html">Edit</a><button class="delete-button btn-small" type="button">Delete</button></div></td>
+          </tr>
+          <tr>
+            <td>Chronicles of Bicolia Offline RPG</td>
+            <td>Charles Martillano</td>
+            <td>RPG / Adventure</td>
+            <td>2026-11-02</td>
+            <td><div class="row-actions"><a class="btn-secondary btn-small" href="form.html">Edit</a><button class="delete-button btn-small" type="button">Delete</button></div></td>
+          </tr>
+          <tr>
+            <td>IT Lab Block Breaker</td>
+            <td>Marc Celis</td>
+            <td>Action / Arcade</td>
+            <td>2026-11-08</td>
+            <td><div class="row-actions"><a class="btn-secondary btn-small" href="form.html">Edit</a><button class="delete-button btn-small" type="button">Delete</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
